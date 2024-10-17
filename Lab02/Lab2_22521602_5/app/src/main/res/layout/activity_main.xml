@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#800080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon An Tuan_22521602"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namemonan"
+        android:textSize="20sp"
+        android:text="Name: "
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:id="@+id/editname"
+        android:hint="*******"
+        app:layout_constraintTop_toTopOf="@id/namemonan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/namemonan"
+        app:layout_constraintBottom_toBottomOf="@id/namemonan"
+        android:layout_marginStart="100dp"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thumbail"
+        android:textSize="20sp"
+        android:text="Thumbail"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editname"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/thumbail"
+        app:layout_constraintLeft_toLeftOf="@id/thumbail"
+        app:layout_constraintTop_toTopOf="@id/thumbail"
+        android:layout_marginLeft="115dp"
+        android:spinnerMode="dialog"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/promotion"
+        android:textSize="20sp"
+        android:text="Promotion"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thumbail"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/promotion"
+        app:layout_constraintLeft_toLeftOf="@id/promotion"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/promotion"
+        android:layout_marginLeft="-130dp"
+        android:id="@+id/checkboxbtn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nhap"
+        android:layout_margin="10dp"
+        android:text="ADD A NEW DISH"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxbtn"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/nhap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/viewmonan"
+        android:numColumns="2"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>
