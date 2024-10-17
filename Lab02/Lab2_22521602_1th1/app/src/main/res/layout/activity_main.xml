@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#800080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:background="#550000FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView Tuan_22521602"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap ten:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/input"
+        app:layout_constraintBottom_toBottomOf="@id/input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="46dp"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:id="@+id/edt_nhap"
+        android:textSize="18sp"
+        android:hint="Nhap ten muon nhap"
+        app:layout_constraintStart_toEndOf="@id/title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title2"
+        app:layout_constraintBottom_toBottomOf="@id/title2"
+        android:layout_marginStart="15dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/btn_nhap"
+        android:text="Nhap"
+        app:layout_constraintTop_toBottomOf="@id/edt_nhap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        />
+    <View
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintBottom_toTopOf="@id/listview1th1"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/title3"
+    android:textSize="20sp"
+    android:text="position: "
+    android:textColor="#000000"
+    app:layout_constraintTop_toTopOf="@id/info"
+    app:layout_constraintBottom_toBottomOf="@id/info"
+    app:layout_constraintStart_toStartOf="parent"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/title4fix"
+    android:text="none"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    app:layout_constraintTop_toTopOf="@id/info"
+    app:layout_constraintBottom_toBottomOf="@id/info"
+    app:layout_constraintStart_toEndOf="@id/title3"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title5"
+        android:text=" ;  value: "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/info"
+        app:layout_constraintBottom_toBottomOf="@id/info"
+        app:layout_constraintStart_toEndOf="@id/title4fix"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title6fix"
+        android:text="none"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/info"
+        app:layout_constraintBottom_toBottomOf="@id/info"
+        app:layout_constraintStart_toEndOf="@id/title5"
+        />
+    <ListView
+        android:id="@+id/listview1th1"
+        android:layout_width="410dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
