@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1_22521602_2_RelativeLayout</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
+    <string name="signup">Sign up</string>
+    <string name="sign_in_via_facebook">Sign in via facebook</string>
+
+</resources>
